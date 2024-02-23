@@ -1,0 +1,65 @@
+﻿body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.separator {
+    width: calc(100%); /* 20px margin on each side for 4 columns */
+    height: 3px;
+    background-color: black;
+    margin: 0 auto 20px auto;
+}
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.headline {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+}
+.headline img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.headline h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+.headline p {
+    font-size: 16px;
+}
+.small-article {
+    flex: 0 0 calc(20% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.small-article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.small-article h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.small-article p {
+    font-size: 16px;
+    text-align: justify;
+}
