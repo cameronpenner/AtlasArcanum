@@ -2,64 +2,122 @@
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('content/oracle-art.jpg');
+    /* Replace 'background-image.jpg' with the URL or path to your background image */
+    background-size: cover;
+    background-position: center;
 }
+
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 50px auto;
+    /* Adjust margin as needed */
+    padding: 100px;
+    background-color: white;
+    /* Set the background color of the newspaper */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add a subtle drop shadow */
 }
+
 .header {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .title {
     font-family: "Times New Roman", Times, serif;
     font-size: 80px;
     margin-bottom: 10px;
 }
+
 .separator {
-    width: calc(100%); /* 20px margin on each side for 4 columns */
-    height: 3px;
+    width: calc(100%);
+    /* 20px margin on each side for 4 columns */
+    height: 2px;
     background-color: black;
     margin: 0 auto 20px auto;
 }
+
 .article {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    /* break-inside: avoid-column; */
 }
+
 .headline {
-    flex: 0 0 100%;
     margin-bottom: 20px;
 }
+
 .headline img {
-    width: 100%;
+    width: 900px;
     height: auto;
-    margin-bottom: 10px;
+    margin: 10px;
+    float: right;
+    margin-right: 1.5em;
+    filter: grayscale(80%);
 }
+
 .headline h2 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 45px;
+    font-family: "Arial Black", Times, serif;
+    font-size: 50px;
     margin-bottom: 5px;
+    
 }
+
 .headline p {
     font-size: 16px;
+    text-align: justify;
+    /* display: inline-block; */
+    /* Stretch paragraph text horizontally */
+    /* overflow: hidden; */
 }
+
+.columns {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* margin-bottom: 20px; */
+
+    column-count: 5;
+    /* Adjust the number of columns as needed */
+    column-gap: 5px;
+    /* Adjust the gap between columns */
+    column-fill: auto;
+    /* Distribute content evenly across columns */
+    max-height: 800px;
+    /* Set the maximum height of the container */
+    /* break-inside: avoid-column; */
+}
+
+.small-article-head {
+    break-inside: avoid-column;
+}
+
 .small-article {
     flex: 0 0 calc(20% - 20px);
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 20px;
 }
+
 .small-article img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
+
 .small-article h3 {
     font-size: 25px;
     margin-bottom: 5px;
 }
+
 .small-article p {
     font-size: 16px;
     text-align: justify;
+}
+
+/* Clearfix to prevent small articles from floating around headline */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
