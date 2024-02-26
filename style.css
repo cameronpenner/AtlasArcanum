@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     background-image: url('content/oracle-art.jpg');
-    /* Replace 'background-image.jpg' with the URL or path to your background image */
     background-size: cover;
     background-position: center;
 }
@@ -11,12 +10,9 @@
 .container {
     max-width: 1200px;
     margin: 50px auto;
-    /* Adjust margin as needed */
     padding: 100px;
     background-color: white;
-    /* Set the background color of the newspaper */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add a subtle drop shadow */
 }
 
 .header {
@@ -32,7 +28,6 @@
 
 .separator {
     width: calc(100%);
-    /* 20px margin on each side for 4 columns */
     height: 2px;
     background-color: black;
     margin: 0 auto 20px auto;
@@ -42,7 +37,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    /* break-inside: avoid-column; */
 }
 
 .headline {
@@ -50,12 +44,12 @@
 }
 
 .headline img {
-    width: 900px;
+    width: 600px;
     height: auto;
     margin: 10px;
     float: right;
     margin-right: 1.5em;
-    filter: grayscale(80%);
+    filter: grayscale(90%);
 }
 
 .headline h2 {
@@ -68,29 +62,17 @@
 .headline p {
     font-size: 16px;
     text-align: justify;
-    /* display: inline-block; */
-    /* Stretch paragraph text horizontally */
-    /* overflow: hidden; */
 }
 
 .columns {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* margin-bottom: 20px; */
-
     column-count: 5;
-    /* Adjust the number of columns as needed */
     column-gap: 5px;
-    /* Adjust the gap between columns */
-    column-fill: auto;
-    /* Distribute content evenly across columns */
-    max-height: 800px;
-    /* Set the maximum height of the container */
-    /* break-inside: avoid-column; */
+    column-fill: balance;
+    overflow: hidden;
 }
 
 .small-article-head {
-    break-inside: avoid-column;
+    break-inside: avoid-column;/* doesn't work!! */
 }
 
 .small-article {
@@ -113,11 +95,4 @@
 .small-article p {
     font-size: 16px;
     text-align: justify;
-}
-
-/* Clearfix to prevent small articles from floating around headline */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
 }
