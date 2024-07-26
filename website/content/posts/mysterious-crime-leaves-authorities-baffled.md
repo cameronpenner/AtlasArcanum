@@ -1,7 +1,7 @@
 +++
 title = 'Mysterious Crime Leaves Authorities Baffled'
 date = 2024-07-25T12:46:43-05:00
-draft = true
+draft = false
 +++
 ![Workshop](workshop.jpg)
 By Abello Vouch
