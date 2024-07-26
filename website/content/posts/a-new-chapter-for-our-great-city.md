@@ -1,7 +1,7 @@
 +++
 title = 'A New Chapter for Our Great City – Welcome to the Oracle'
 date = 2024-07-25T12:41:55-05:00
-draft = true
+draft = false
 author = 'Felix Quinterband'
 +++
 ![Oracle](oracle-art.jpg)
