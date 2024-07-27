@@ -1,4 +1,4 @@
-baseURL = '//AtlasArcanum/'
+baseURL = 'https://cameronpenner.github.io/AtlasArcanum/'
 languageCode = 'en-us'
 title = 'Atlas Arcanum'
 theme = 'news'
